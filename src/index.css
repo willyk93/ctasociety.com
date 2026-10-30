@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-surface text-ink font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display text-brand-blue;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  /* Focus visible bien contrasté pour la navigation au clavier */
+  :focus-visible {
+    @apply outline outline-[3px] outline-offset-2 outline-brand-yellow;
+  }
+  [id], [tabindex='-1'] {
+    scroll-margin-top: 7rem;
+  }
+  ::selection {
+    @apply bg-brand-yellow text-brand-blue;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+  .section {
+    @apply py-16 sm:py-24;
+  }
+  .card {
+    @apply rounded-2xl border border-surface-line bg-white shadow-card;
+  }
+  .placeholder-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-dashed border-ink-muted/40 bg-surface-gray px-2.5 py-0.5 text-xs font-medium text-ink-muted;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

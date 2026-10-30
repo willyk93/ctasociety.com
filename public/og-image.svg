@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#002664"/>
+  <rect y="600" width="400" height="30" fill="#0A3478"/>
+  <rect x="400" y="600" width="400" height="30" fill="#FECB00"/>
+  <rect x="800" y="600" width="400" height="30" fill="#C60C30"/>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="96" font-weight="700" fill="#fff">CTAS</text>
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="40" fill="#fff">La Communauté des Tchadiens de l’Alberta Society</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="30" fill="#FECB00">Edmonton, Alberta, Canada</text>
+</svg>
